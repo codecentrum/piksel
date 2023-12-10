@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
+// eslint-disable-next-line no-undef
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'react', 'react-hooks'],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'import'],
   ignorePatterns: [
     'build',
     'dist',
