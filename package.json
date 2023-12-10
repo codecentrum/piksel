@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:docs": "cd docs && bun run dev",
+    "dev:docs": "cd docs && bun install && bun run dev",
     "prepare": "husky install"
   },
   "devDependencies": {

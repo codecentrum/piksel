@@ -1,0 +1,31 @@
+{
+  "name": "@codecentrum/piksel-hooks",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "A collection of hooks for state and UI management",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "bun"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/codecentrum/piksel#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codecentrum/piksel.git"
+  },
+  "bugs": "https://github.com/codecentrum/piksel/issues",
+  "scripts": {
+    "build": "bun run ./build.ts"
+  },
+  "devDependencies": {
+    "@types/web": "^0.0.126",
+    "bun-plugin-dts": "^0.2.1",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
