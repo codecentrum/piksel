@@ -1,2 +1,2 @@
-export { useClipboard } from './clipboard'
-export { usePageLeave } from './pageLeave'
+export { useClipboard } from './useClipboard'
+export { usePageLeave } from './usePageLeave'
