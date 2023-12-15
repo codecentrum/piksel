@@ -1,11 +1,11 @@
 {
   "name": "piksel",
   "workspaces": [
-    "docs",
+    "www",
     "packages/*"
   ],
   "scripts": {
-    "dev:docs": "cd docs && bun install && bun run dev",
+    "dev:www": "cd www && bun install && bun run dev",
     "prepare": "husky install"
   },
   "devDependencies": {
