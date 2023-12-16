@@ -2,15 +2,9 @@
 
 import { allDocs } from '@contentlayer'
 
-import { motion } from 'framer-motion'
-
-import { usePathname } from 'next/navigation'
-
 import LeftPanelMenu from './_menu'
 
 export default function LeftPanel() {
-  const pathname = usePathname()
-
   const quickStart = allDocs
     .filter((post) => post?._raw.flattenedPath.includes('quickstart'))
     .sort((a, b) => {
