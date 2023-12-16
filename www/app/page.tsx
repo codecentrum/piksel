@@ -12,7 +12,10 @@ export default function Home() {
         <p className="mt-3 leading-relaxed">
           Beautifully designed components that you can use for any projects.
         </p>
-        <Link href="/docs/introduction" className="mt-4 inline-block underline">
+        <Link
+          href="/docs/quickstart/introduction"
+          className="mt-4 inline-block underline"
+        >
           See documentation
         </Link>
       </div>
