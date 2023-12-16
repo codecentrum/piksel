@@ -1,14 +1,13 @@
 import { PropsWithChildren } from 'react'
 
 import type { Metadata } from 'next'
-import { Nunito_Sans } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 
 import { twMerge } from 'tailwind-merge'
 
-import '@code-hike/mdx/dist/index.css'
-import '@/styles/main.css'
+import '@/styles/main.scss'
 
-const NunitoSans = Nunito_Sans({ subsets: ['latin'] })
+const PlusJakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -21,8 +20,8 @@ export default function RootLayout(props: PropsWithChildren) {
     <html lang="en" className="h-full">
       <body
         className={twMerge(
-          NunitoSans.className,
-          'flex h-full w-full flex-col antialiased'
+          PlusJakartaSans.className,
+          'flex h-full w-full flex-col bg-white text-black antialiased dark:bg-zinc-900 dark:text-white'
         )}
       >
         {children}

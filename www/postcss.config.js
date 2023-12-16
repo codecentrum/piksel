@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 // eslint-disable-next-line no-undef
 module.exports = {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    'postcss-import': {},
+    'tailwindcss': {},
+    'autoprefixer': {},
   },
 }

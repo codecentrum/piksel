@@ -1,8 +1,16 @@
+'use client'
+
 import { allDocs } from '@contentlayer'
+
+import { motion } from 'framer-motion'
+
+import { usePathname } from 'next/navigation'
 
 import LeftPanelMenu from './_menu'
 
 export default function LeftPanel() {
+  const pathname = usePathname()
+
   const quickStart = allDocs
     .filter((post) => post?._raw.flattenedPath.includes('quickstart'))
     .sort((a, b) => {
@@ -60,10 +68,10 @@ export default function LeftPanel() {
     })
 
   return (
-    <aside className="hidden h-full border-r border-gray-200 p-4 lg:fixed lg:inset-0 lg:z-40 lg:block lg:w-56">
+    <aside className="hidden h-full border-r border-zinc-900/10 p-4 dark:border-white/10 lg:fixed lg:inset-0 lg:z-40 lg:block lg:w-56 lg:p-6">
       <div className="mb-4">
-        <h6 className="mb-1 font-bold">Quickstart</h6>
-        <ul className="mt-2 pl-4">
+        <h6 className="text-xs font-bold">Quickstart</h6>
+        <ul className="relative mt-2 border-l border-zinc-900/10 pl-4 dark:border-white/10">
           {quickStart.map((item, i) => {
             return <LeftPanelMenu item={item} key={i} />
           })}
@@ -71,8 +79,8 @@ export default function LeftPanel() {
       </div>
 
       <div className="my-4">
-        <h6 className="mb-1 font-bold">Foundations</h6>
-        <ul className="mt-2 pl-4">
+        <h6 className="text-xs font-bold">Foundations</h6>
+        <ul className="mt-2 border-l border-zinc-900/10 pl-4 dark:border-white/10">
           {foundations.map((item, i) => {
             return <LeftPanelMenu item={item} key={i} />
           })}
@@ -80,8 +88,8 @@ export default function LeftPanel() {
       </div>
 
       <div className="my-4">
-        <h6 className="mb-1 font-bold">Components</h6>
-        <ul className="mt-2 pl-4">
+        <h6 className="text-xs font-bold">Components</h6>
+        <ul className="mt-2 border-l border-zinc-900/10 pl-4 dark:border-white/10">
           {components.map((item, i) => {
             return <LeftPanelMenu item={item} key={i} />
           })}
@@ -89,8 +97,8 @@ export default function LeftPanel() {
       </div>
 
       <div className="my-4">
-        <h6 className="mb-1 font-bold">Hooks</h6>
-        <ul className="mt-2 pl-4">
+        <h6 className="text-xs font-bold">Hooks</h6>
+        <ul className="mt-2 border-l border-zinc-900/10 pl-4 dark:border-white/10">
           {hooks.map((item, i) => {
             return <LeftPanelMenu item={item} key={i} />
           })}
@@ -98,8 +106,8 @@ export default function LeftPanel() {
       </div>
 
       <div className="my-4">
-        <h6 className="mb-1 font-bold">Utilities</h6>
-        <ul className="mt-2 pl-4">
+        <h6 className="text-xs font-bold">Utilities</h6>
+        <ul className="mt-2 border-l border-zinc-900/10 pl-4 dark:border-white/10">
           {utilities.map((item, i) => {
             return <LeftPanelMenu item={item} key={i} />
           })}

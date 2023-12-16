@@ -41,5 +41,8 @@
     "*.{js,jsx,ts,tsx,md,json}": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "framer-motion": "^10.16.16"
   }
 }
