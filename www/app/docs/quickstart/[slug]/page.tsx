@@ -18,10 +18,8 @@ const MDXLayout = ({ params }: { params: { slug: string } }) => {
   }) as Docs
 
   return (
-    <article className="mx-auto max-w-xl py-8">
-      <div className="mb-8 text-center">
-        <ContentMDX value={doc} />
-      </div>
+    <article className="mx-auto h-full w-full p-4 lg:w-3/4 lg:p-8">
+      <ContentMDX value={doc} />
     </article>
   )
 }

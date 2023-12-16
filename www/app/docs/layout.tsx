@@ -7,7 +7,7 @@ import Navbar from '@/containers/navbar'
 export default function RootLayout(props: PropsWithChildren) {
   const { children } = props
   return (
-    <div className="h-full lg:ml-80">
+    <div className="h-full lg:ml-72 xl:ml-80">
       <LeftPanel />
       <div className="relative flex h-full flex-col">
         <Navbar />
