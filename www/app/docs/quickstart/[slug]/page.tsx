@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 import { Docs, allDocs } from '@contentlayer'
 
 import ContentMDX from './_content'
