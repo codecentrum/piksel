@@ -29,6 +29,15 @@ export default makeSource({
   contentDirPath: 'docs',
   documentTypes: [Docs],
   mdx: {
-    remarkPlugins: [[remarkCodeHike, { theme: 'nord', lineNumbers: true }]],
+    remarkPlugins: [
+      [
+        remarkCodeHike,
+        {
+          theme: 'github-dark-dimmed',
+          lineNumbers: true,
+          showCopyButton: true,
+        },
+      ],
+    ],
   },
 })
