@@ -1,6 +1,6 @@
 import { Docs, allDocs } from '@contentlayer'
 
-import ContentMDX from './_content'
+import ContentMDX from '@/containers/mdxRender'
 
 export const generateStaticParams = async () =>
   allDocs.map((post) => ({ slug: post?._raw.flattenedPath.split('/')[1] }))

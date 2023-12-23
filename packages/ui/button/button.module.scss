@@ -20,13 +20,13 @@
   border-radius: calc(var(--btn-radius, 8px) - 2px); // 6px
 }
 
-.largeSize {
-  @apply h-12 text-base;
+.defaultSize {
+  @apply h-9;
   border-radius: var(--btn-radius, 8px);
 }
 
-.defaultSize {
-  @apply h-10;
+.largeSize {
+  @apply h-11 text-base;
   border-radius: var(--btn-radius, 8px);
 }
 

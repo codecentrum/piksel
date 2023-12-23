@@ -4,18 +4,5 @@
 
 @import '@code-hike/mdx/dist/index.css';
 
-.ch-codegroup {
-  box-shadow: none;
-}
-
-.ch-code-scroll-parent {
-  font-size: 12px;
-}
-
-// :root {
-
-// }
-
-// .dark {
-
-// }
+// custome codehide codeblock
+@import './code-hike-custom.scss';
