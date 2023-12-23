@@ -4,6 +4,8 @@ import { allDocs } from '@contentlayer'
 
 import LeftPanelMenu from './_menu'
 
+import BrandLogo from '@/containers/brand'
+
 export default function LeftPanel() {
   const quickStart = allDocs
     .filter((post) => post?._raw.flattenedPath.includes('quickstart'))
@@ -62,7 +64,11 @@ export default function LeftPanel() {
     })
 
   return (
-    <aside className="hidden h-full border-r border-zinc-900/10 p-4 dark:border-white/10 lg:fixed lg:inset-0 lg:z-40 lg:block lg:w-56 lg:p-6">
+    <aside className="hidden h-full border-r border-zinc-900/10 p-4 lg:fixed lg:inset-0 lg:z-40 lg:block lg:w-56 lg:p-6 dark:border-white/10">
+      <div className="mb-10">
+        <BrandLogo />
+      </div>
+
       <div className="mb-4">
         <h6 className="text-xs font-bold">Quickstart</h6>
         <ul className="relative mt-2 border-l border-zinc-900/10 pl-4 dark:border-white/10">

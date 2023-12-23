@@ -15,7 +15,7 @@ export default function LeftPanelMenu({ item }: { item: Docs }) {
       {pathname === item.url && (
         <motion.div
           className="absolute -left-[17px] h-4 w-[1.5px] bg-green-200"
-          layoutId="test"
+          layoutId="active-state-left-panel"
         />
       )}
       <Link
