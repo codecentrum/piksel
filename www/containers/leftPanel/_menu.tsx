@@ -21,7 +21,9 @@ export default function LeftPanelMenu({ item }: { item: Docs }) {
       <Link
         href={item.url}
         className={twMerge(
-          pathname === item.url ? 'text-black dark:text-white' : 'text-gray-400'
+          pathname === item.url
+            ? 'text-black dark:text-white'
+            : 'text-gray-600 dark:text-gray-300'
         )}
       >
         {item.title}

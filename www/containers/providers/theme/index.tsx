@@ -6,5 +6,9 @@ import { ThemeProvider as ThemeProviderNextThemes } from 'next-themes'
 
 export default function ThemeProvider(props: PropsWithChildren) {
   const { children } = props
-  return <ThemeProviderNextThemes>{children}</ThemeProviderNextThemes>
+  return (
+    <ThemeProviderNextThemes attribute="class" enableSystem>
+      {children}
+    </ThemeProviderNextThemes>
+  )
 }

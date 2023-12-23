@@ -18,13 +18,16 @@
   },
   "bugs": "https://github.com/codecentrum/piksel/issues",
   "scripts": {
-    "watch": "bun build ./index.ts --outdir ./dist --watch",
+    "watch": "bun --watch run ./build.ts",
     "build": "bun run ./build.ts"
   },
   "devDependencies": {
+    "@types/css-modules": "^1.0.5",
     "@types/web": "^0.0.130",
+    "bun-lightningcss": "^0.2.0",
     "bun-plugin-dts": "^0.2.1",
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "sass": "^1.69.5"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

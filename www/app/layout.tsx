@@ -23,7 +23,7 @@ export default function RootLayout(props: PropsWithChildren) {
       <body
         className={twMerge(
           PlusJakartaSans.className,
-          'flex h-full w-full flex-col bg-white text-black antialiased dark:bg-zinc-900 dark:text-white'
+          'flex h-full w-full flex-col bg-white text-sm text-black antialiased dark:bg-zinc-900 dark:text-white'
         )}
       >
         <ThemeProvider>{children}</ThemeProvider>

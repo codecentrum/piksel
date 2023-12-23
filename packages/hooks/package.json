@@ -18,7 +18,7 @@
   },
   "bugs": "https://github.com/codecentrum/piksel/issues",
   "scripts": {
-    "watch": "bun build ./index.ts --outdir ./dist --watch",
+    "watch": "bun --watch run ./build.ts",
     "build": "bun run ./build.ts"
   },
   "devDependencies": {

@@ -15,6 +15,6 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
-    "types": ["bun-types", "web"]
+    "types": ["bun-types", "web", "css-modules"]
   }
 }

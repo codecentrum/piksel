@@ -1,0 +1,84 @@
+@use '../styles//variables.module.scss';
+@use 'sass:color';
+
+.btn {
+  @apply inline-flex items-center justify-center whitespace-nowrap px-4 font-semibold;
+  min-width: 60px;
+  &:focus,
+  &:focus-visible {
+    @apply outline-none ring-2 ring-offset-1 ring-offset-white;
+  }
+  &:disabled {
+    background-color: var(--btn-disabled-bg, variables.$gray400);
+    color: var(--btn-disabled-fg, variables.$gray600);
+    cursor: not-allowed;
+  }
+}
+
+.smallSize {
+  @apply h-8 px-3 text-xs;
+  border-radius: calc(var(--btn-radius, 8px) - 2px); // 6px
+}
+
+.largeSize {
+  @apply h-12 text-base;
+  border-radius: var(--btn-radius, 8px);
+}
+
+.defaultSize {
+  @apply h-10;
+  border-radius: var(--btn-radius, 8px);
+}
+
+.default {
+  background-color: var(--btn-default-bg, variables.$black);
+  color: var(--btn-default-fg, variables.$white);
+}
+
+.secondary {
+  background-color: var(--btn-secondary-bg, variables.$gray50);
+  color: var(--btn-secondary-fg, variables.$black);
+  border: 1px solid variables.$gray200;
+}
+
+.danger {
+  background-color: var(--btn-danger-bg, variables.$red600);
+  color: var(--btn-danger-fg, variables.$white);
+}
+
+.success {
+  background-color: var(--btn-success-bg, variables.$green700);
+  color: var(--btn-success-fg, variables.$white);
+}
+
+.warning {
+  background-color: var(--btn-warning-bg, variables.$orange500);
+  color: var(--btn-warning-fg, variables.$white);
+}
+
+.info {
+  background-color: var(--btn-info-bg, variables.$blue400);
+  color: var(--btn-info-fg, variables.$blue950);
+}
+
+:global(.dark) {
+  .btn {
+    &:focus,
+    &:focus-visible {
+      @apply outline-none ring-2 ring-offset-1 ring-offset-black;
+    }
+    &:disabled {
+      background-color: var(--btn-disabled-bg, variables.$gray600);
+      color: var(--btn-disabled-fg, variables.$gray400);
+    }
+  }
+  .default {
+    background-color: var(--btn-default-bg, variables.$white);
+    color: var(--btn-default-fg, variables.$black);
+  }
+  .secondary {
+    background-color: var(--btn-secondary-bg, variables.$gray800);
+    color: var(--btn-secondary-fg, variables.$white);
+    border: 1px solid variables.$gray700;
+  }
+}
