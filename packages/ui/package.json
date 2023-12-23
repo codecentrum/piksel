@@ -1,9 +1,9 @@
 {
-  "name": "@codecentrum/piksel-hooks",
+  "name": "@codecentrum/piksel-ui",
   "version": "0.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "description": "A collection of hooks for state and UI management",
+  "description": "A collection of UI component",
   "files": [
     "dist"
   ],
@@ -28,5 +28,10 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "tailwind-merge": "^2.2.0"
   }
 }

@@ -6,6 +6,12 @@
   ],
   "scripts": {
     "dev:www": "cd www && bun install && bun run dev",
+    "watch:ui": "cd packages/ui && bun install && bun run watch",
+    "build:ui": "cd packages/ui && bun install && bun run build",
+    "watch:hooks": "cd packages/hooks && bun install && bun run watch",
+    "build:hooks": "cd packages/hooks && bun install && bun run build",
+    "watch:packages": "concurrently \"bun run watch:ui\" \"bun run watch:hooks\"",
+    "build:packages": "bun run build:ui && bun run build:hooks",
     "upgrade": "bun x npm-check-updates -ui -ws",
     "prepare": "husky install"
   },
@@ -44,6 +50,7 @@
     ]
   },
   "dependencies": {
+    "concurrently": "^8.2.2",
     "framer-motion": "^10.16.16"
   }
 }
