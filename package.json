@@ -6,6 +6,7 @@
   ],
   "scripts": {
     "dev:www": "cd www && bun install && bun run dev",
+    "upgrade": "bun x npm-check-updates -ui -ws",
     "prepare": "husky install"
   },
   "devDependencies": {
