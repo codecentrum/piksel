@@ -17,11 +17,7 @@ const MDXLayout = ({ params }: { params: { slug: string } }) => {
     return post?._raw.flattenedPath.split('/')[1] === params.slug
   }) as Docs
 
-  return (
-    <article className="mx-auto h-full w-full p-4 lg:w-3/4 lg:p-8">
-      <ContentMDX value={doc} />
-    </article>
-  )
+  return <ContentMDX value={doc} />
 }
 
 export default MDXLayout
