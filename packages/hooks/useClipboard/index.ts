@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { useState } from 'react'
 
 export function useClipboard({ timeout = 2000 } = {}) {
@@ -11,7 +13,7 @@ export function useClipboard({ timeout = 2000 } = {}) {
     setCopied(value)
   }
 
-  const copy = (valueToCopy: never) => {
+  const copy = (valueToCopy: any) => {
     if ('clipboard' in navigator) {
       navigator.clipboard
         .writeText(valueToCopy)

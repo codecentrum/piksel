@@ -1,6 +1,71 @@
 ---
 title: useClipboard
-description: useClipboard
+description: Facilitate the management of clipboard functionality within a React component.
 ---
 
 # useClipboard
+Facilitate the management of clipboard functionality within a React component.
+
+
+<br />
+<br />
+
+#### Installation
+
+<CH.Code>
+```bash npm
+npm install @codecentrum/piksel-hooks
+```
+
+```bash yarn
+yarn add @codecentrum/piksel-hooks
+```
+
+```bash pnpm
+pnpm add @codecentrum/piksel-hooks
+```
+
+```bash bun
+bun add @codecentrum/piksel-hooks
+```
+</CH.Code>
+
+```tsx page.tsx
+import { useClipboard } from '@codecentrum/piksel-hooks'
+```
+
+
+<br />
+
+#### Preview
+
+<DemoUseClipboard />
+
+```tsx page.tsx
+import { useClipboard } from '@codecentrum/piksel-hooks'
+import { Button } from '@codecentrum/piksel-ui'
+
+export default function DemoUseClipboard() {
+  const clipboard = useClipboard({ timeout: 1000 })
+  return (
+    <Button themes="success" onClick={() => clipboard.copy('Hello!')}>
+      {clipboard.copied ? 'Copied' : 'Copy'}
+    </Button>
+  )
+}
+```
+
+<br />
+
+#### Definition
+
+```tsx
+function useClipboard(
+  options: { timeout: number } = { timeout: 2000 }
+): {
+  copy: (valueToCopy: any) => void;
+  reset: () => void;
+  error: Error;
+  copied: boolean;
+}
+```

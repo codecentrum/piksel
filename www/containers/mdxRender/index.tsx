@@ -1,10 +1,16 @@
 'use client'
 
 import { Button } from '@codecentrum/piksel-ui'
-import { Docs } from '@contentlayer'
+
 import Link from 'next/link'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import { twMerge } from 'tailwind-merge'
+
+import { Docs } from '@/.contentlayer/generated'
+
+import DemoUseClipboard from '@/containers/demos/clipboard'
+import DemoUsePageLeave from '@/containers/demos/pageLeave'
+import DemoUseTextSelection from '@/containers/demos/textSelection'
 
 export default function ContentMDX({ value }: { value: Docs }) {
   const Content = getMDXComponent(value?.body.code)
@@ -19,11 +25,14 @@ export default function ContentMDX({ value }: { value: Docs }) {
         <Content
           components={{
             Button,
+            DemoUseClipboard,
+            DemoUsePageLeave,
+            DemoUseTextSelection,
           }}
         />
       </article>
       {value.toc && (
-        <div className="absolute right-0 top-0 hidden w-60 flex-shrink-0 border-l border-zinc-900/10 px-8 py-4 lg:block dark:border-white/10">
+        <div className="fixed right-0 top-20 hidden w-60 flex-shrink-0 border-l border-zinc-900/10 px-8 py-4 lg:block dark:border-white/10">
           <h6 className="mb-4 !text-sm">On this page</h6>
           <ul>
             {value.headings.map(

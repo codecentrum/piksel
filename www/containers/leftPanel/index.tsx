@@ -1,8 +1,8 @@
 'use client'
 
-import { allDocs } from '@contentlayer'
-
 import LeftPanelMenu from './_menu'
+
+import { allDocs } from '@/.contentlayer/generated'
 
 import BrandLogo from '@/containers/brand'
 
@@ -79,8 +79,8 @@ export default function LeftPanel() {
       </div>
 
       <div className="my-4">
-        <h6 className="!text-xs font-bold">Foundations</h6>
-        <ul className="mt-2 border-l border-zinc-900/10 pl-4 dark:border-white/10">
+        <h6 className="mb-2 !text-xs font-bold">Foundations</h6>
+        <ul className="border-l border-zinc-900/10 pl-4 dark:border-white/10">
           {foundations.map((item, i) => {
             return <LeftPanelMenu item={item} key={i} />
           })}
@@ -88,8 +88,8 @@ export default function LeftPanel() {
       </div>
 
       <div className="my-4">
-        <h6 className="!text-xs font-bold">Components</h6>
-        <ul className="mt-2 border-l border-zinc-900/10 pl-4 dark:border-white/10">
+        <h6 className="mb-2 !text-xs font-bold">Components</h6>
+        <ul className="border-l border-zinc-900/10 pl-4 dark:border-white/10">
           {components.map((item, i) => {
             return <LeftPanelMenu item={item} key={i} />
           })}
@@ -97,8 +97,8 @@ export default function LeftPanel() {
       </div>
 
       <div className="my-4">
-        <h6 className="!text-xs font-bold">Hooks</h6>
-        <ul className="mt-2 border-l border-zinc-900/10 pl-4 dark:border-white/10">
+        <h6 className="mb-2 !text-xs font-bold">Hooks</h6>
+        <ul className="border-l border-zinc-900/10 pl-4 dark:border-white/10">
           {hooks.map((item, i) => {
             return <LeftPanelMenu item={item} key={i} />
           })}
@@ -106,8 +106,8 @@ export default function LeftPanel() {
       </div>
 
       <div className="my-4">
-        <h6 className="!text-xs font-bold">Utilities</h6>
-        <ul className="mt-2 border-l border-zinc-900/10 pl-4 dark:border-white/10">
+        <h6 className="mb-2 !text-xs font-bold">Utilities</h6>
+        <ul className="border-l border-zinc-900/10 pl-4 dark:border-white/10">
           {utilities.map((item, i) => {
             return <LeftPanelMenu item={item} key={i} />
           })}

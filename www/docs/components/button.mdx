@@ -1,6 +1,6 @@
 ---
 title: Button
-description: Button
+description: A button component in a user interface is a graphical element that users can interact with by clicking or tapping. Buttons are a fundamental part of UI design and serve various purposes, such as triggering actions, submitting forms, or navigating between different sections of an application.
 ---
 
 # Button
@@ -10,7 +10,7 @@ A button component in a user interface is a graphical element that users can int
 <br />
 <br />
 
-#### Install & Usage
+#### Installation
 
 <CH.Code>
 ```bash npm
@@ -122,3 +122,18 @@ import { Button } from '@codecentrum/piksel-ui'
 <Button themes="secondary" size="large">Large</Button>
 ```
 
+<br />
+
+##### State
+
+<div className="flex items-center space-x-4">
+  <Button disabled>Disabled</Button>
+</div>
+
+<br />
+
+###### Disabled
+
+```tsx disabled.tsx
+<Button disabled>Disabled</Button>
+```

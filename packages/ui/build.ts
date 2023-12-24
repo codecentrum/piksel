@@ -8,5 +8,6 @@ await Bun.build({
   outdir: './dist',
   minify: true,
   splitting: true,
+  external: ['react'],
   plugins: [cssModule, dts()],
 })
