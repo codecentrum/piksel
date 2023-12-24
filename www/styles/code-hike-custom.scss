@@ -5,3 +5,13 @@
 .ch-code-scroll-parent {
   font-size: 12px;
 }
+
+.ch-frame-button {
+  width: 10px;
+  height: 10px;
+  @apply border border-gray-600 bg-gray-600;
+}
+
+.ch-code-scroll-content {
+  height: 100% !important;
+}

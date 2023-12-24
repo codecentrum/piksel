@@ -6,7 +6,7 @@ export default function TehemeSwitcher() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <div className="space-x-4">
+    <div className="space-x-4 text-sm">
       <button onClick={() => setTheme('light')}>Light Mode</button>
       <button onClick={() => setTheme('dark')}>Dark Mode</button>
       <button onClick={() => setTheme('system')}>System Mode</button>

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout(props: PropsWithChildren) {
   const { children } = props
   return (
-    <html lang="en" className="h-full" suppressHydrationWarning>
+    <html lang="en" className="h-full scroll-smooth" suppressHydrationWarning>
       <body
         className={twMerge(
           PlusJakartaSans.className,

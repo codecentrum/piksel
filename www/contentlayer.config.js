@@ -35,7 +35,7 @@ const Docs = defineDocumentType(() => ({
     headings: {
       type: 'json',
       resolve: async (doc) => {
-        const regXHeader = /\n(?<flag>#{2,6})\s+(?<content>.+)/g
+        const regXHeader = /\n(?<flag>#{4,6})\s+(?<content>.+)/g
         const slugger = new GithubSlugger()
         const headings = Array.from(doc.body.raw.matchAll(regXHeader)).map(
           ({ groups }) => {
@@ -74,8 +74,7 @@ export default makeSource({
       [
         remarkCodeHike,
         {
-          theme: 'github-dark-dimmed',
-          lineNumbers: true,
+          theme: 'slack-dark',
           showCopyButton: true,
         },
       ],
