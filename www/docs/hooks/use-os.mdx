@@ -1,0 +1,66 @@
+---
+title: useOs
+description: Detects user operating system.
+---
+
+# useOs
+Detects user operating system.
+
+
+<br />
+<br />
+
+#### Installation
+
+<CH.Code>
+```bash npm
+npm install @codecentrum/piksel-hooks
+```
+
+```bash yarn
+yarn add @codecentrum/piksel-hooks
+```
+
+```bash pnpm
+pnpm add @codecentrum/piksel-hooks
+```
+
+```bash bun
+bun add @codecentrum/piksel-hooks
+```
+</CH.Code>
+
+```tsx page.tsx
+import { useOs } from '@codecentrum/piksel-hooks'
+```
+
+<br />
+
+#### Demo
+
+Possible values are undetermined, macos, ios, windows, android, linux. If the OS cannot be identified, for example, during server side rendering undetermined will be returned.
+
+<br />
+
+<DemoUseOs />
+
+```tsx page.tsx
+import { useOs } from '@codecentrum/piksel-hooks'
+
+export default function DemoUseOs() {
+  const os = useOs()
+  return (
+    <p>
+      Your os is <b>{os}</b>
+    </p>
+  )
+}
+```
+
+<br />
+
+#### Definition
+
+```tsx
+function useOs(options?: UseOsOptions): OS;
+```

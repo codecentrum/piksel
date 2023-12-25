@@ -6,7 +6,9 @@ export default function DemoUseTextSelection() {
   return (
     <div>
       <p>Select some text on this page</p>
-      <h6 className="mt-2">Selected text: {selection?.toString()}</h6>
+      <p className="mt-2">
+        Selected text: <b>{selection?.toString()}</b>
+      </p>
     </div>
   )
 }

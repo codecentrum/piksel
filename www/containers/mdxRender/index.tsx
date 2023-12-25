@@ -10,6 +10,7 @@ import { Docs } from '@/.contentlayer/generated'
 
 import DemoUseClickOutside from '@/containers/demos/clickOutside'
 import DemoUseClipboard from '@/containers/demos/clipboard'
+import DemoUseOs from '@/containers/demos/os'
 import DemoUsePageLeave from '@/containers/demos/pageLeave'
 import DemoUseTextSelection from '@/containers/demos/textSelection'
 
@@ -30,6 +31,7 @@ export default function ContentMDX({ value }: { value: Docs }) {
             DemoUsePageLeave,
             DemoUseTextSelection,
             DemoUseClickOutside,
+            DemoUseOs,
           }}
         />
       </article>
