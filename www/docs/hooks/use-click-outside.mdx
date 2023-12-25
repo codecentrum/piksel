@@ -4,8 +4,8 @@ description: Detects click and touch events outside of given element
 ---
 
 # useClickOutside
-Detects click and touch events outside of given element
 
+Detects click and touch events outside of given element
 
 <br />
 <br />
@@ -28,13 +28,47 @@ pnpm add @codecentrum/piksel-hooks
 ```bash bun
 bun add @codecentrum/piksel-hooks
 ```
+
 </CH.Code>
 
 ```tsx page.tsx
 import { useClickOutside } from '@codecentrum/piksel-hooks'
 ```
 
+<br />
+
+#### Demo
+
+<DemoUseClickOutside />
+
+```tsx page.tsx
+import { useState } from 'react'
+import { useClickOutside } from '@codecentrum/piksel-hooks'
+import { Button } from '@codecentrum/piksel-ui'
+
+export default function DemoUseClickOutside() {
+  const [opened, setOpened] = useState('')
+  const ref = useClickOutside(() => setOpened('Click Outside'))
+
+  return (
+    <>
+      <Button themes="info" ref={ref} onClick={() => setOpened('Click Inside')}>
+        Button
+      </Button>
+      <p>{opened}</p>
+    </>
+  )
+}
+```
 
 <br />
 
-#### Preview
+#### Definition
+
+```tsx
+function useClickOutside<T extends HTMLElement = any>(
+  handler: () => void,
+  events?: string[] | null,
+  nodes?: (HTMLElement | null)[]
+): import('react').MutableRefObject<T | undefined>
+```
