@@ -9,8 +9,8 @@ import styles from './button.module.scss'
 
 const buttonVariants = cva(styles.btn, {
   variants: {
-    themes: {
-      default: styles.default,
+    theme: {
+      primary: styles.primary,
       secondary: styles.secondary,
       danger: styles.danger,
       success: styles.success,
@@ -24,7 +24,7 @@ const buttonVariants = cva(styles.btn, {
     },
   },
   defaultVariants: {
-    themes: 'default',
+    theme: 'primary',
     size: 'default',
   },
 })
@@ -36,11 +36,11 @@ export interface ButtonProps
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, themes, size, asChild = false, ...props }, ref) => {
+  ({ className, theme, size, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : 'button'
     return (
       <Comp
-        className={twMerge(buttonVariants({ themes, size, className }))}
+        className={twMerge(buttonVariants({ theme, size, className }))}
         ref={ref}
         {...props}
       />

@@ -1,8 +1,8 @@
 'use client'
 
-import LeftPanelMenu from './_menu'
+import { allDocs } from '@contentlayer/generated'
 
-import { allDocs } from '@/.contentlayer/generated'
+import LeftPanelMenu from './_menu'
 
 import BrandLogo from '@/containers/brand'
 

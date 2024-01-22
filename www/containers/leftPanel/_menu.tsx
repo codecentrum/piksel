@@ -1,12 +1,11 @@
 'use client'
 
+import { Docs } from '@contentlayer/generated'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 import { usePathname } from 'next/navigation'
 import { twMerge } from 'tailwind-merge'
-
-import { Docs } from '@/.contentlayer/generated'
 
 export default function LeftPanelMenu({ item }: { item: Docs }) {
   const pathname = usePathname()

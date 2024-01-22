@@ -2,11 +2,10 @@
 
 import { Button } from '@codecentrum/piksel-ui'
 
+import { Docs } from '@contentlayer/generated'
 import Link from 'next/link'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import { twMerge } from 'tailwind-merge'
-
-import { Docs } from '@/.contentlayer/generated'
 
 import DemoUseClickOutside from '@/containers/demos/clickOutside'
 import DemoUseClipboard from '@/containers/demos/clipboard'

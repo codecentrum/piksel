@@ -1,4 +1,4 @@
-import { Docs, allDocs } from '@/.contentlayer/generated'
+import { Docs, allDocs } from '@contentlayer/generated'
 
 import ContentMDX from '@/containers/mdxRender'
 
