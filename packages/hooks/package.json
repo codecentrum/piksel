@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "A collection of hooks for state and UI management",
+  "private": true,
   "files": [
     "dist"
   ],

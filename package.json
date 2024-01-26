@@ -5,23 +5,15 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:www": "cd www && bun install && bun run dev",
-    "watch:ui": "cd packages/ui && bun install && bun run watch",
-    "build:ui": "cd packages/ui && bun install && bun run build",
-    "watch:hooks": "cd packages/hooks && bun install && bun run watch",
-    "build:hooks": "cd packages/hooks && bun install && bun run build",
-    "watch:packages": "concurrently \"bun run watch:ui\" \"bun run watch:hooks\"",
-    "build:packages": "bun run build:ui && bun run build:hooks",
-    "upgrade": "bun x npm-check-updates -ui -ws",
+    "dev:www": "cd www && yarn install && yarn run dev",
     "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "@types/web": "^0.0.126",
+    "@types/web": "^0.0.135",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
-    "bun-types": "latest",
     "commitizen": "^4.3.0",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
@@ -29,7 +21,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^8.0.0",
+    "husky": "^9.0.6",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.9",
@@ -51,6 +43,12 @@
   },
   "dependencies": {
     "concurrently": "^8.2.2",
-    "framer-motion": "^10.16.16"
-  }
+    "framer-motion": "^11.0.3"
+  },
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:codecentrum/piksel.git",
+  "author": "Faisal Amir <urmauur@gmail.com>",
+  "license": "MIT",
+  "private": true
 }
