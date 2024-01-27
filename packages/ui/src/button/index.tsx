@@ -1,31 +1,26 @@
-import { forwardRef, ButtonHTMLAttributes } from 'react'
+import React, { forwardRef, ButtonHTMLAttributes } from 'react'
 
 import { Slot } from '@radix-ui/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'
 
 import { twMerge } from 'tailwind-merge'
 
-import styles from './button.module.scss'
+// import styles from './button.module.scss'
 
-const buttonVariants = cva(styles.btn, {
+const buttonVariants = cva('p-8', {
   variants: {
     theme: {
-      primary: styles.primary,
-      secondary: styles.secondary,
-      danger: styles.danger,
-      success: styles.success,
-      warning: styles.warning,
-      info: styles.info,
+      primary: 'bg-red-200',
     },
-    size: {
-      small: styles.smallSize,
-      default: styles.defaultSize,
-      large: styles.largeSize,
-    },
+    // size: {
+    //   small: styles.smallSize,
+    //   default: styles.defaultSize,
+    //   large: styles.largeSize,
+    // },
   },
   defaultVariants: {
     theme: 'primary',
-    size: 'default',
+    // size: 'default',
   },
 })
 
@@ -36,11 +31,11 @@ export interface ButtonProps
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, theme, size, asChild = false, ...props }, ref) => {
+  ({ className, theme, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : 'button'
     return (
       <Comp
-        className={twMerge(buttonVariants({ theme, size, className }))}
+        className={twMerge(buttonVariants({ theme, className }))}
         ref={ref}
         {...props}
       />

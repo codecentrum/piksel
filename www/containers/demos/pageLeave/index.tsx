@@ -8,11 +8,9 @@ export default function DemoUsePageLeave() {
   usePageLeave(() => setCount((prev) => prev + 1))
 
   return (
-    <div>
-      <p>
-        Your mouse left the page{' '}
-        <span className="!text-emerald-400">{count}</span> times
-      </p>
-    </div>
+    <p>
+      Your mouse left the page&nbsp;
+      <span className="!text-emerald-400">{count}</span> times
+    </p>
   )
 }
