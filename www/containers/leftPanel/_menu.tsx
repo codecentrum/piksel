@@ -14,14 +14,14 @@ export default function LeftPanelMenu({ item }: { item: Docs }) {
     <li className="relative py-1">
       {pathname === item.url && (
         <motion.div
-          className="absolute -left-[17.5px] h-5 w-[2px] bg-emerald-500 text-sm dark:bg-emerald-400"
+          className="absolute -left-[17.5px] h-5 w-[2px] bg-emerald-500 dark:bg-emerald-400"
           layoutId="active-state-left-panel"
         />
       )}
       <Link
         href={item.url}
         className={twMerge(
-          pathname === item.url && 'text-black dark:text-white '
+          pathname === item.url && 'text-black dark:text-white'
         )}
       >
         {item.title}
