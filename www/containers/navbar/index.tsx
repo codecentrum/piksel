@@ -3,7 +3,7 @@ import TehemeSwitcher from '@/containers/themeSwitcher'
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 z-40 flex h-14 w-full items-center border-b border-zinc-900/10 bg-white/80 p-4 backdrop-blur lg:w-[calc(100%-224px)] lg:px-8 lg:py-4 dark:border-white/10 dark:bg-zinc-900/80">
+    <nav className="sticky top-0 z-40 flex h-14 w-full items-center border-b border-zinc-900/10 bg-white/80 p-4 backdrop-blur lg:px-8 lg:py-4 dark:border-white/10 dark:bg-zinc-900/80">
       <div className="block lg:hidden">
         <BrandLogo />
       </div>

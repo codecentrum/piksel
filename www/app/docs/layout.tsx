@@ -11,7 +11,7 @@ export default function RootLayout(props: PropsWithChildren) {
       <LeftPanel />
       <div className="relative flex min-h-screen flex-col">
         <Navbar />
-        <div className="h-full flex-1 pt-12">{children}</div>
+        <div className="h-full flex-1">{children}</div>
         <Footer />
       </div>
     </div>
