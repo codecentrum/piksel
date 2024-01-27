@@ -5,8 +5,17 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:www": "cd www && yarn install && yarn run dev",
-    "prepare": "husky install"
+    "dev:hooks": "cd packages/hooks && yarn dev",
+    "dev:ui": "cd packages/ui && yarn dev",
+    "dev:packages": "concurrently --kill-others \"yarn dev:hooks\" \"yarn dev:ui\" ",
+    "dev:www": "cd www && yarn install && yarn dev",
+    "dev": "concurrently --kill-others \"yarn dev:packages\" \"yarn dev:www\" ",
+    "prepare": "husky install",
+    "build:hooks": "cd packages/hooks && yarn build",
+    "build:ui": "cd packages/ui && yarn build",
+    "build:packages": "concurrently \"yarn build:hooks\" \"yarn build:ui\" ",
+    "build:www": "cd www && yarn install && yarn build",
+    "build": "concurrently \"yarn build:packages\" \"yarn build:www\" "
   },
   "devDependencies": {
     "@babel/core": "^7.23.9",
