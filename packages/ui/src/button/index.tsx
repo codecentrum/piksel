@@ -5,22 +5,30 @@ import { cva, type VariantProps } from 'class-variance-authority'
 
 import { twMerge } from 'tailwind-merge'
 
-// import styles from './button.module.scss'
+import './styles.scss'
 
-const buttonVariants = cva('p-8', {
+const buttonVariants = cva('btn', {
   variants: {
     theme: {
-      primary: 'bg-red-200',
+      primary: 'btn--primary',
+      secondary: 'btn--secondary',
+      destructive: 'btn--destructive',
     },
-    // size: {
-    //   small: styles.smallSize,
-    //   default: styles.defaultSize,
-    //   large: styles.largeSize,
-    // },
+    variant: {
+      solid: 'btn--solid',
+      soft: 'btn--soft',
+      outline: 'btn--outline',
+    },
+    size: {
+      small: 'btn--small',
+      medium: 'btn--medium',
+      large: 'btn--large',
+    },
   },
   defaultVariants: {
     theme: 'primary',
-    // size: 'default',
+    size: 'medium',
+    variant: 'solid',
   },
 })
 
@@ -31,11 +39,11 @@ export interface ButtonProps
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, theme, asChild = false, ...props }, ref) => {
+  ({ className, theme, size, variant, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : 'button'
     return (
       <Comp
-        className={twMerge(buttonVariants({ theme, className }))}
+        className={twMerge(buttonVariants({ theme, size, variant, className }))}
         ref={ref}
         {...props}
       />
