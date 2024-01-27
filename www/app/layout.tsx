@@ -1,13 +1,13 @@
 import { PropsWithChildren } from 'react'
 
 import type { Metadata } from 'next'
-import { Plus_Jakarta_Sans } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
 import { twMerge } from 'tailwind-merge'
 
 import '@/styles/main.scss'
 
-const PlusJakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'] })
+const PlusJakartaSans = Inter({ subsets: ['latin'] })
 
 import ThemeProvider from '@/containers/providers/theme'
 

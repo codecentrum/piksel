@@ -1,12 +1,9 @@
-import { resolve } from 'path'
-
 import autoprefixer from 'autoprefixer'
 import commonjs from 'rollup-plugin-commonjs'
 import json from 'rollup-plugin-json'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
-import scss from 'rollup-plugin-scss'
 import typescript from 'rollup-plugin-typescript2'
 import tailwindcss from 'tailwindcss'
 
@@ -44,6 +41,6 @@ export default [
     watch: {
       clearScreen: false,
     },
-    external: ['react', 'react-dom', 'tailwindcss'],
+    external: ['react', 'react-dom', 'tailwindcss', 'class-variance-authority'],
   },
 ]

@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import '../../styles/bases.scss';
 
 .btn {
   @apply flex items-center justify-center px-4 font-semibold transition-all;
@@ -8,39 +8,39 @@
 
   // Disabled
   &:disabled {
-    background-color: hsl(var(--btn-bg-secondary), 30%);
-    color: hsl(var(--btn-bg-secondary));
+    background-color: hsl(var(--bg-secondary), 30%);
+    color: hsl(var(--bg-secondary));
     pointer-events: none;
   }
 
   // Primary
   &--primary {
     @apply text-white;
-    background-color: hsl(var(--btn-bg-primary));
+    background-color: hsl(var(--bg-primary));
 
     // Variant soft primary
     &.btn--soft {
-      background-color: hsl(var(--btn-bg-primary), 10%);
-      color: hsl(var(--btn-bg-primary));
+      background-color: hsl(var(--bg-primary), 10%);
+      color: hsl(var(--bg-primary));
       &:hover {
-        background-color: hsl(var(--btn-bg-primary), 20%);
+        background-color: hsl(var(--bg-primary), 20%);
       }
     }
 
     // Variant outline primary
     &.btn--outline {
       background-color: transparent;
-      border: 1px solid hsl(var(--btn-bg-primary));
-      color: hsl(var(--btn-bg-primary));
+      border: 1px solid hsl(var(--bg-primary));
+      color: hsl(var(--bg-primary));
       &:hover {
-        background-color: hsl(var(--btn-bg-primary), 5%);
+        background-color: hsl(var(--bg-primary), 5%);
       }
     }
   }
 
   // Secondary
   &--secondary {
-    background-color: hsl(var(--btn-bg-secondary), 10%);
+    background-color: hsl(var(--bg-secondary), 10%);
     &:hover {
       filter: brightness(65%);
     }
@@ -48,9 +48,9 @@
     // Variant outline secondary
     &.btn--outline {
       background-color: transparent;
-      border: 1px solid hsl(var(--btn-bg-secondary));
+      border: 1px solid hsl(var(--bg-secondary));
       &:hover {
-        background-color: hsl(var(--btn-bg-secondary), 5%);
+        background-color: hsl(var(--bg-secondary), 5%);
       }
     }
   }
@@ -58,24 +58,24 @@
   // Destructive
   &--destructive {
     @apply text-white;
-    background-color: hsl(var(--btn-bg-destructive));
+    background-color: hsl(var(--bg-destructive));
 
     // Variant soft destructive
     &.btn--soft {
-      background-color: hsl(var(--btn-bg-destructive), 10%);
-      color: hsl(var(--btn-bg-destructive));
+      background-color: hsl(var(--bg-destructive), 10%);
+      color: hsl(var(--bg-destructive));
       &:hover {
-        background-color: hsl(var(--btn-bg-destructive), 20%);
+        background-color: hsl(var(--bg-destructive), 20%);
       }
     }
 
     // Variant outline destructive
     &.btn--outline {
       background-color: transparent;
-      border: 1px solid hsl(var(--btn-bg-destructive));
-      color: hsl(var(--btn-bg-destructive));
+      border: 1px solid hsl(var(--bg-destructive));
+      color: hsl(var(--bg-destructive));
       &:hover {
-        background-color: hsl(var(--btn-bg-destructive), 5%);
+        background-color: hsl(var(--bg-destructive), 5%);
       }
     }
   }
@@ -83,16 +83,16 @@
   // Size
   &--small {
     @apply h-8;
-    border-radius: var(--rounded-small);
+    border-radius: var(--radius-small);
   }
 
   &--medium {
-    @apply h-10;
-    border-radius: var(--rounded-medium);
+    @apply h-9;
+    border-radius: var(--radius-medium);
   }
 
   &--large {
-    @apply h-12;
-    border-radius: var(--rounded-large);
+    @apply h-11;
+    border-radius: var(--radius-large);
   }
 }

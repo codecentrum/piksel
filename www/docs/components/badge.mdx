@@ -1,11 +1,11 @@
 ---
 title: Badge
-description: isual element within a user interface that provides quick, at-a-glance information or status. Badges are often used to highlight specific attributes, actions, or states associated with an element. A badge component typically consists of a concise piece of information, often represented as a label or icon, and is visually distinct from the surrounding content
+description: Element within a user interface that provides quick, at-a-glance information or status. Badges are often used to highlight specific attributes, actions, or states associated with an element. A badge component typically consists of a concise piece of information, often represented as a label or icon, and is visually distinct from the surrounding content
 ---
 
 # Badge
 
-isual element within a user interface that provides quick, at-a-glance information or status. Badges are often used to highlight specific attributes, actions, or states associated with an element. A badge component typically consists of a concise piece of information, often represented as a label or icon, and is visually distinct from the surrounding content
+Displays a badge or a component that looks like a badge.
 
 <br />
 <br />
@@ -33,5 +33,102 @@ import { Badge } from '@codecentrum/piksel-ui'
 
 <br />
 
-#### Components
+#### Example
 
+<div className="flex items-center space-x-4 mt-4">
+  <Badge>Badge</Badge>
+  <Badge theme="secondary">Badge</Badge>
+  <Badge theme="info">Badge</Badge>
+  <Badge theme="success">Badge</Badge>
+  <Badge theme="warning">Badge</Badge>
+  <Badge theme="destructive">Badge</Badge>
+</div>
+
+<br />
+
+
+```tsx example.tsx
+<Badge>Badge</Badge>
+<Badge theme="secondary">Badge</Badge>
+<Badge theme="info">Badge</Badge>
+<Badge theme="success">Badge</Badge>
+<Badge theme="warning">Badge</Badge>
+<Badge theme="destructive">Badge</Badge>
+```
+
+
+<br />
+
+##### Variant
+Use the variant prop to control the visual style of the button.
+
+<br />
+
+###### Soft
+
+<div className="flex items-center space-x-4 mt-4">
+  <Badge variant="soft">Badge</Badge>
+  <Badge theme="secondary" variant="soft">Badge</Badge>
+  <Badge theme="info" variant="soft">Badge</Badge>
+  <Badge theme="success" variant="soft">Badge</Badge>
+  <Badge theme="warning" variant="soft">Badge</Badge>
+  <Badge theme="destructive" variant="soft">Badge</Badge>
+</div>
+
+<br />
+
+
+```tsx soft.tsx
+<Badge variant="soft">Badge</Badge>
+<Badge theme="secondary" variant="soft">Badge</Badge>
+<Badge theme="info" variant="soft">Badge</Badge>
+<Badge theme="success" variant="soft">Badge</Badge>
+<Badge theme="warning" variant="soft">Badge</Badge>
+<Badge theme="destructive" variant="soft">Badge</Badge>
+```
+
+<br />
+
+###### Outline
+
+<div className="flex items-center space-x-4 mt-4">
+  <Badge variant="outline">Label</Badge>
+  <Badge theme="secondary" variant="outline">Label</Badge>
+  <Badge theme="info" variant="outline">Label</Badge>
+  <Badge theme="success" variant="outline">Label</Badge>
+  <Badge theme="warning" variant="outline">Label</Badge>
+  <Badge theme="destructive" variant="outline">Label</Badge>
+</div>
+
+<br />
+
+
+```tsx outline.tsx
+<Badge variant="outline">Label</Badge>
+<Badge theme="secondary" variant="outline">Label</Badge>
+<Badge theme="info" variant="outline">Label</Badge>
+<Badge theme="success" variant="outline">Label</Badge>
+<Badge theme="warning" variant="outline">Label</Badge>
+<Badge theme="destructive" variant="outline">Label</Badge>
+```
+
+<br />
+
+##### Size
+Use the size prop to control the size of the button.
+
+
+<div className="flex items-center space-x-4 mt-4">
+  <Badge size="small">Small</Badge>
+  <Badge>Medium</Badge>
+  <Badge size="large">Large</Badge>
+</div>
+
+<br />
+
+
+```tsx size.tsx
+<Badge size="small">Small</Badge>
+<Badge>Medium</Badge>
+<Badge size="large">Large</Badge>
+```

@@ -9,6 +9,7 @@ import pkg from './package.json' assert { type: 'json' }
 export default [
   {
     input: `./src/index.ts`,
+    treeshake: true,
     output: [
       {
         file: pkg.module,
@@ -25,5 +26,9 @@ export default [
         useTsconfigDeclarationDir: true,
       }),
     ],
+    watch: {
+      clearScreen: false,
+    },
+    external: ['react', 'react-dom', 'tailwindcss', 'class-variance-authority'],
   },
 ]

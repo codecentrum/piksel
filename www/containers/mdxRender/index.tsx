@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@codecentrum/piksel-ui'
+import { Button, Badge } from '@codecentrum/piksel-ui'
 
 import { Docs } from '@contentlayer/generated'
 import Link from 'next/link'
@@ -26,6 +26,7 @@ export default function ContentMDX({ value }: { value: Docs }) {
         <Content
           components={{
             Button,
+            Badge,
             DemoUseClipboard,
             DemoUsePageLeave,
             DemoUseTextSelection,

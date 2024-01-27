@@ -9,7 +9,12 @@ export default function DemoUseClickOutside() {
 
   return (
     <Fragment>
-      <Button themes="info" ref={ref} onClick={() => setOpened('Click Inside')}>
+      <Button
+        size="small"
+        theme="primary"
+        ref={ref}
+        onClick={() => setOpened('Click Inside')}
+      >
         Button
       </Button>
       <p className="mt-4">{opened}</p>

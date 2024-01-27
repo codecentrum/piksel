@@ -1,10 +1,10 @@
+@import '@codecentrum/piksel-ui/dist/style/piksel.css';
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
 @import '@code-hike/mdx/dist/index.css';
-@import '@codecentrum/piksel-ui/dist/style/piksel.css';
 
 // custome codehide codeblock
 @import './code-hike-custom.scss';
-@import './typography.scss';
