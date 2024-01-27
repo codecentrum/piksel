@@ -45,9 +45,9 @@ export default function DemoUsePageLeave() {
   const [count, setCount] = useState(0)
   usePageLeave(() => setCount((prev) => prev + 1))
   return (
-    <div>
+    <>
       <p>Your mouse left the page {count} times</p>
-    </div>
+    </>
   )
 }
 ```

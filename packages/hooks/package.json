@@ -1,8 +1,8 @@
 {
   "name": "@codecentrum/piksel-hooks",
   "version": "0.0.0",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "description": "A collection of hooks for state and UI management",
   "private": true,

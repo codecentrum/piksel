@@ -42,10 +42,11 @@
     "rimraf": "^5.0.5",
     "rollup": "^4.9.6",
     "rollup-plugin-commonjs": "^9.1.8",
-    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.0.0"
   },
@@ -63,8 +64,11 @@
     ]
   },
   "dependencies": {
+    "autoprefixer": "^10.4.17",
     "concurrently": "^8.2.2",
-    "framer-motion": "^11.0.3"
+    "framer-motion": "^11.0.3",
+    "rollup-plugin-scss": "3",
+    "sass": "^1.70.0"
   },
   "version": "0.0.1",
   "main": "index.js",

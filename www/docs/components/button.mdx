@@ -35,77 +35,86 @@ import { Button } from '@codecentrum/piksel-ui'
 
 #### Example
 
-<br />
-
-##### Theme
-
 <div className="flex items-center space-x-4 mt-4">
-  <Button>Primary</Button>
-  <Button theme="secondary">Secondary</Button>
-  <Button theme="info">Info</Button>
-  <Button theme="success">Success</Button>
-  <Button theme="warning">Warning</Button>
-  <Button theme="danger">Danger</Button>
+  <Button>Continue</Button>
+  <Button theme="secondary">Cancel</Button>
+  <Button theme="destructive">Delete</Button>
 </div>
 
 <br />
 
 
-```tsx primary.tsx
-<Button>Primary</Button>
+```tsx example.tsx
+<Button>Continue</Button>
+<Button theme="secondary">Cancel</Button>
+<Button theme="destructive">Delete</Button>
 ```
 
-```tsx secondary.tsx
-<Button theme="secondary">Secondary</Button>
+<br />
+
+##### Variant
+Use the variant prop to control the visual style of the button.
+
+<br />
+
+
+###### Soft
+
+<div className="flex items-center space-x-4 mt-4">
+  <Button variant="soft">Continue</Button>
+  <Button theme="secondary" variant="soft">Cancel</Button>
+  <Button theme="destructive" variant="soft">Delete</Button>
+</div>
+
+<br />
+
+
+```tsx soft.tsx
+<Button variant="soft">Continue</Button>
+<Button theme="secondary" variant="soft">Cancel</Button>
+<Button theme="destructive" variant="soft">Delete</Button>
 ```
 
+<br />
 
-```tsx info.tsx
-<Button theme="info">Info</Button>
+###### Outline
+
+<div className="flex items-center space-x-4 mt-4">
+  <Button variant="outline">Continue</Button>
+  <Button theme="secondary" variant="outline">Cancel</Button>
+  <Button theme="destructive" variant="outline">Delete</Button>
+</div>
+
+<br />
+
+
+```tsx outline.tsx
+<Button variant="outline">Continue</Button>
+<Button theme="secondary" variant="outline">Cancel</Button>
+<Button theme="destructive" variant="outline">Delete</Button>
 ```
-
-
-```tsx success.tsx
-<Button theme="success">Success</Button>
-```
-
-
-```tsx warning.tsx
-<Button theme="warning">Warning</Button>
-```
-
-
-```tsx danger.tsx
-<Button theme="danger">Danger</Button>
-```
-
 
 <br />
 
 ##### Size
+Use the size prop to control the size of the button.
 
-<div className="flex items-center space-x-4">
-  <Button theme="secondary" size="small">Small</Button>
-  <Button theme="secondary">Default</Button>
-  <Button theme="secondary" size="large">Large</Button>
+
+<div className="flex items-center space-x-4 mt-4">
+  <Button size="small" theme="secondary">Small</Button>
+  <Button theme="secondary">Medium</Button>
+  <Button size="large" theme="secondary">Large</Button>
 </div>
 
 <br />
 
 
-```tsx small.tsx
-<Button theme="secondary" size="small">Small</Button>
+```tsx size.tsx
+<Button>Button</Button>
+<Button theme="secondary">Secondary</Button>
+<Button theme="destructive">Danger</Button>
 ```
 
-
-```tsx default.tsx
-<Button theme="secondary">Default</Button>
-```
-
-
-```tsx large.tsx
-<Button theme="secondary" size="large">Large</Button>
-```
 
 <br />
 
