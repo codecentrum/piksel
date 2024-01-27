@@ -7,6 +7,9 @@
   --radius-large: 8px;
 
   // Token color
+  --bg-base: 0, 0%, 0%; // black
+  --fg-base: 0, 0%, 100%; // white
+
   --bg-primary: 221, 83%, 53%; // user primary color
   --bg-secondary: 240, 5%, 65%; //#a1a1aa
   --bg-destructive: 0, 72%, 51%; //#dc2626;
@@ -18,5 +21,8 @@
 }
 
 .dark {
+  --bg-base: 0, 0%, 100%; // white
+  --fg-base: 0, 0%, 0%; // black
+
   --text-paragraph: 216, 12%, 84%;
 }

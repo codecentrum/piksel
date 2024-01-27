@@ -1,7 +1,7 @@
 @import '../../styles/bases.scss';
 
 .btn {
-  @apply flex items-center justify-center px-4 font-semibold transition-all;
+  @apply inline-flex items-center justify-center px-4 font-semibold transition-all;
   &:hover {
     filter: brightness(95%);
   }

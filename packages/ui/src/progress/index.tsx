@@ -36,4 +36,4 @@ const Progress = ({ className, size, value, ...props }: ProgressProps) => {
   )
 }
 
-export { Progress, progressVariants }
+export { Progress }

@@ -1,7 +1,7 @@
 @import '../../styles/bases.scss';
 
 .badge {
-  @apply flex items-center justify-center px-2 font-medium transition-all;
+  @apply inline-flex items-center justify-center px-2 font-medium transition-all;
 
   // Primary
   &--primary {
