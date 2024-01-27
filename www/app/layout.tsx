@@ -7,7 +7,7 @@ import { twMerge } from 'tailwind-merge'
 
 import '@/styles/main.scss'
 
-const PlusJakartaSans = Inter({ subsets: ['latin'] })
+const InterFont = Inter({ subsets: ['latin'] })
 
 import ThemeProvider from '@/containers/providers/theme'
 
@@ -22,7 +22,7 @@ export default function RootLayout(props: PropsWithChildren) {
     <html lang="en" className="h-full scroll-smooth" suppressHydrationWarning>
       <body
         className={twMerge(
-          PlusJakartaSans.className,
+          InterFont.className,
           'flex h-full w-full flex-col bg-white text-sm text-black antialiased dark:bg-zinc-900 dark:text-white'
         )}
       >

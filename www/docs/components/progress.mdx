@@ -1,0 +1,66 @@
+---
+title: Progress
+description: Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.
+
+---
+
+# Progress
+
+Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.
+
+<br />
+<br />
+
+#### Installation
+
+<CH.Code>
+```bash npm
+npm install @codecentrum/piksel-ui
+```
+
+```bash yarn
+yarn add @codecentrum/piksel-ui
+```
+
+```bash pnpm
+pnpm add @codecentrum/piksel-ui
+```
+
+</CH.Code>
+
+```tsx page.tsx
+import { Progress } from '@codecentrum/piksel-ui'
+```
+
+<br />
+
+#### Example
+
+<br />
+
+<Progress value={20} />
+
+```tsx example.tsx
+<Progress value={20} />
+```
+
+<br />
+
+##### Size
+Use the size prop to control the size of the progress.
+
+<br />
+
+<Progress value={26} size="small" />
+<br />
+<Progress value={60} />
+<br />
+<Progress value={80} size="large" />
+
+<br />
+
+```tsx size.tsx
+<Progress value={40} size="small" />
+<Progress value={60} />
+<Progress value={40} size="large" />
+```

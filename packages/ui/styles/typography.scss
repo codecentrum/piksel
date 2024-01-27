@@ -5,12 +5,12 @@
 
 :is(h1, .h1) {
   font-size: 40px;
-  line-height: 48px;
+  line-height: 56px;
 }
 
 :is(h2, .h2) {
   font-size: 32px;
-  line-height: 40px;
+  line-height: 48px;
 }
 
 :is(h3, .h3) {
@@ -25,7 +25,7 @@
 
 :is(h5, .h5) {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 28px;
 }
 
 :is(h6, .h6) {
