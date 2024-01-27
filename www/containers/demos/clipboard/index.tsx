@@ -5,11 +5,7 @@ export default function DemoUseClipboard() {
   const clipboard = useClipboard({ timeout: 1000 })
 
   return (
-    <Button
-      size="small"
-      theme="primary"
-      onClick={() => clipboard.copy('Hello!')}
-    >
+    <Button theme="primary" onClick={() => clipboard.copy('Hello!')}>
       {clipboard.copied ? 'Copied' : 'Copy'}
     </Button>
   )
