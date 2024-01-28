@@ -1,0 +1,140 @@
+---
+title: Tooltip
+description: A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
+
+---
+
+# Tooltip
+
+A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
+
+<br />
+
+#### Installation
+
+<CH.Code>
+```bash npm
+npm install @codecentrum/piksel-ui
+```
+
+```bash yarn
+yarn add @codecentrum/piksel-ui
+```
+
+```bash pnpm
+pnpm add @codecentrum/piksel-ui
+```
+
+</CH.Code>
+
+```tsx page.tsx
+import { Tooltip } from '@codecentrum/piksel-ui'
+```
+
+<br />
+
+#### Example
+
+<div className="mt-4">
+  <Tooltip
+    trigger={<Badge variant="soft">Hover Me</Badge>}
+    content="This is an explanation"
+  />
+</div>
+
+
+```tsx page.tsx
+<Tooltip
+  trigger={<Badge variant="soft">Hover Me</Badge>}
+  content="This is an explanation"
+/>
+```
+
+<br/>
+
+#### Placements
+The preferred side of the trigger to render component
+
+<br/>
+
+##### Top
+
+<div className="mt-4">
+  <Tooltip
+    side="top"
+    trigger={<Badge variant="soft">Hover Me</Badge>}
+    content="This is an explanation"
+  />
+</div>
+
+
+```tsx top.tsx
+<Tooltip
+  side="top"
+  trigger={<Badge variant="soft">Hover Me</Badge>}
+  content="This is an explanation"
+/>
+```
+
+<br/>
+
+##### Right
+
+<div className="mt-4">
+  <Tooltip
+    side="right"
+    trigger={<Badge variant="soft">Hover Me</Badge>}
+    content="This is an explanation"
+  />
+</div>
+
+
+```tsx right.tsx
+<Tooltip
+  side="right"
+  trigger={<Badge variant="soft">Hover Me</Badge>}
+  content="This is an explanation"
+/>
+```
+
+<br/>
+
+##### Bottom
+
+<div className="mt-4">
+  <Tooltip
+    side="bottom"
+    trigger={<Badge variant="soft">Hover Me</Badge>}
+    content="This is an explanation"
+  />
+</div>
+
+
+```tsx bottom.tsx
+<Tooltip
+  side="bottom"
+  trigger={<Badge variant="soft">Hover Me</Badge>}
+  content="This is an explanation"
+/>
+```
+
+<br/>
+
+##### Left
+
+<div className="mt-4">
+  <Tooltip
+    side="left"
+    trigger={<Badge variant="soft">Hover Me</Badge>}
+    content="This is an explanation"
+  />
+</div>
+
+
+```tsx left.tsx
+<Tooltip
+  side="left"
+  trigger={<Badge variant="soft">Hover Me</Badge>}
+  content="This is an explanation"
+/>
+```

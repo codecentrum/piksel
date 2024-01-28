@@ -8,12 +8,24 @@ export interface TooltipProps {
   trigger: ReactNode
   content: ReactNode
   side?: 'top' | 'right' | 'bottom' | 'left'
+  open?: boolean
+  onOpenChange?: (open: boolean) => void
 }
 
-const Tooltip = ({ trigger, content, side = 'top' }: TooltipProps) => {
+const Tooltip = ({
+  trigger,
+  content,
+  side = 'top',
+  open,
+  onOpenChange,
+}: TooltipProps) => {
   return (
     <TooltipPrimitive.Provider>
-      <TooltipPrimitive.Root delayDuration={200}>
+      <TooltipPrimitive.Root
+        delayDuration={200}
+        open={open}
+        onOpenChange={onOpenChange}
+      >
         <TooltipPrimitive.Trigger>{trigger}</TooltipPrimitive.Trigger>
         <TooltipPrimitive.Portal>
           <TooltipPrimitive.Content
