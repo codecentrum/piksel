@@ -64,6 +64,7 @@
     ]
   },
   "dependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
     "autoprefixer": "^10.4.17",
     "concurrently": "^8.2.2",
     "framer-motion": "^11.0.3",

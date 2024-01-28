@@ -1,3 +1,4 @@
+import terser from '@rollup/plugin-terser'
 import autoprefixer from 'autoprefixer'
 import commonjs from 'rollup-plugin-commonjs'
 import json from 'rollup-plugin-json'
@@ -25,6 +26,7 @@ export default [
     plugins: [
       nodeResolve(),
       json(),
+      terser(),
       peerDepsExternal(),
       commonjs(),
       typescript({

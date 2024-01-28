@@ -1,3 +1,4 @@
+import terser from '@rollup/plugin-terser'
 import commonjs from 'rollup-plugin-commonjs'
 import json from 'rollup-plugin-json'
 import resolve from 'rollup-plugin-node-resolve'
@@ -20,6 +21,7 @@ export default [
     plugins: [
       resolve(),
       json(),
+      terser(),
       peerDepsExternal(),
       commonjs(),
       typescript({

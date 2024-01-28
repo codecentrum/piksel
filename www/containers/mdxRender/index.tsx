@@ -1,6 +1,12 @@
 'use client'
 
-import { Button, Badge, Progress, Tooltip } from '@codecentrum/piksel-ui'
+import {
+  Button,
+  Badge,
+  Progress,
+  Tooltip,
+  Switch,
+} from '@codecentrum/piksel-ui'
 
 import { Docs } from '@contentlayer/generated'
 import Link from 'next/link'
@@ -27,6 +33,7 @@ export default function ContentMDX({ value }: { value: Docs }) {
           components={{
             Button,
             Tooltip,
+            Switch,
             Progress,
             Badge,
             DemoUseClipboard,
