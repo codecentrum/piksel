@@ -43,3 +43,7 @@
   font-size: inherit;
   color: hsl(var(--text-paragraph));
 }
+
+.error-message {
+  color: hsl(var(--bg-destructive));
+}

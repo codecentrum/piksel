@@ -6,6 +6,7 @@ import {
   Progress,
   Tooltip,
   Switch,
+  Checkbox,
 } from '@codecentrum/piksel-ui'
 
 import { Docs } from '@contentlayer/generated'
@@ -34,6 +35,7 @@ export default function ContentMDX({ value }: { value: Docs }) {
             Button,
             Tooltip,
             Switch,
+            Checkbox,
             Progress,
             Badge,
             DemoUseClipboard,
