@@ -34,10 +34,55 @@ import { Checkbox } from '@codecentrum/piksel-ui'
 
 #### Example
 
-<br />
-
-<Checkbox id="agreement" label="I agree with terms and condition" />
+<div className="mt-4">
+  <Checkbox id="agreement" label="I agree with terms and condition" />
+</div>
 
 ```tsx example.tsx
 <Checkbox id="agreement" label="I agree with terms and condition" />
+```
+
+<br />
+
+##### Helper
+
+<div className="mt-4">
+  <Checkbox id="agreement-helper-description" label="I agree with terms and condition" helperDescription="This checkbox using a helper text" />
+</div>
+
+```tsx example.tsx
+<Checkbox 
+  id="agreement-helper-description" 
+  label="I agree with terms and condition" 
+  helperDescription="This checkbox using a helper text" />
+```
+
+<br />
+
+##### Error
+
+<div className="mt-4">
+  <Checkbox id="agreement-error" label="I agree with terms and condition" errorMessage="An unexpected error occurred. Please try again later" />
+</div>
+
+```tsx example.tsx
+<Checkbox 
+  id="agreement-error" 
+  label="I agree with terms and condition" 
+  errorMessage="An unexpected error occurred. Please try again later" />
+```
+
+<br />
+
+##### Disabled
+
+<div className="mt-4">
+  <Checkbox id="agreement-disabled" label="I agree with terms and condition" disabled />
+</div>
+
+```tsx example.tsx
+<Checkbox 
+  id="agreement-disabled" 
+  label="I agree with terms and condition" 
+  disabled
 ```

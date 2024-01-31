@@ -2,6 +2,11 @@
 
 .btn {
   @apply inline-flex items-center justify-center px-4 font-semibold transition-all;
+
+  &:focus,
+  &:focus-within {
+    @apply outline-2 outline-offset-4;
+  }
   &:hover {
     filter: brightness(95%);
   }
@@ -11,6 +16,7 @@
     background-color: hsl(var(--bg-secondary), 30%);
     color: hsl(var(--bg-secondary));
     pointer-events: none;
+    @apply opacity-50;
   }
 
   // Primary

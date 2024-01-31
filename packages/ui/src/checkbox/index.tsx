@@ -8,6 +8,7 @@ export interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   disabled?: boolean
   className?: string
   label?: ReactNode
+  helperDescription?: ReactNode
   errorMessage?: string
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void
 }
@@ -19,6 +20,7 @@ const Checkbox = ({
   disabled,
   label,
   defaultChecked,
+  helperDescription,
   errorMessage,
   className,
   onChange,
@@ -37,7 +39,10 @@ const Checkbox = ({
         {...props}
       />
       <div>
-        <label htmlFor={id}>{label}</label>
+        <label htmlFor={id} className="checkbox__label">
+          {label}
+        </label>
+        <p className="checkbox__helper">{helperDescription}</p>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
     </div>
